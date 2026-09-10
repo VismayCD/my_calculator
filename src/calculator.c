@@ -1,6 +1,7 @@
 // Core logic
 #include "calculator.h" 
 #include <stdio.h> 
+#include <math.h>
 
 double add(double a, double b) { 
     return a + b;
@@ -22,6 +23,10 @@ double divide(double a, double b) {
     return a / b; 
 }
 
+double power(double a, double b) {
+    return pow(a, b);
+}
+
 int main() {
     double a = 10;
     double b = 2;
@@ -30,6 +35,7 @@ int main() {
     printf("Subtraction: %.2f\n", subtract(a, b));
     printf("Multiplication: %.2f\n", multiply(a, b));
     printf("Division: %.2f\n", divide(a, b));
+    printf("Power: %.2f\n", power(a, b));
 
     return 0;
 }
